@@ -1,0 +1,110 @@
+/* General Styling */
+.invoice-data-container h2 {
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.invoice-data-container h2 a {
+    text-decoration: underline;
+    color: rgb(165, 149, 149);
+}
+
+.invoice-data-container h2 a:hover {
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.table-container {
+    padding-top: 10vh;
+    overflow-x: auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    color: white;
+    height: 5vh;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.Actions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 10vh;
+}
+
+.Actions1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    height: 12vh;
+}
+.Actions1 button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.Actions1 button:hover
+{
+    color: red;
+    text-decoration: underline;
+}
+
+.tt1 input {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    height: 4vh;
+}
+
+.tt1 button {
+    text-align: center;
+    font-size: 0.9rem;
+    height: 4vh;
+    padding: 5px 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.8rem;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+
+    .Actions button {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    th,
+    td {
+        font-size: 0.7rem;
+        padding: 2px;
+    }
+
+    .Actions button {
+        font-size: 0.6rem;
+    }
+}

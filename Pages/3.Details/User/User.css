@@ -1,0 +1,51 @@
+
+.User-container
+{
+
+    margin: 0 1%;
+    border: 1px solid red;
+    width: 100%;
+    overflow: auto;
+    /* scrollbar-width:none; */
+}
+table
+{
+    /* margin: 0 3%; */
+    /* border: 1px solid red; */
+    width: 100%;
+    overflow: auto;
+}
+tr,
+td
+{
+    width: 30%;
+    padding: 5px;
+    font-size: 20px;
+}
+.Rid
+{
+    border: 10x solid red;
+    width: 33%;
+}
+.CName
+{
+    width: 14%;
+}
+.CMobile
+{
+    width: 14%;
+}
+.CEmail
+{
+    width: 23%;
+}
+.CRDate
+{
+    width: 45%;
+}
+.CPDate
+{
+    width: 30%;
+}
+.Actions
+{}

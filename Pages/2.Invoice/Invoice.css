@@ -1,0 +1,255 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Invoice Display */
+  .invoice-display {
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .invoice-display::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
+  
+  /* Form Container */
+  .form-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 8%;
+    padding: 9% 3% 0;
+  }
+  
+  input,
+  select {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #ccc; /* Placeholder text color */
+  }
+  
+  /* Form Header */
+  .CD-header {
+    text-decoration: underline;
+    margin-bottom: 3%;
+    color: white;
+    text-align: center;
+  }
+  
+  .CD-header h2 {
+    font-size: 30px;
+  }
+  
+  /* Form Fields */
+  .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .box label {
+    color: white;
+    font-size: 18px;
+    width: 25%;
+    cursor: pointer;
+  }
+  
+  .box input {
+    width: 75%;
+  }
+  
+  .box1 input {
+    display: block;
+    width: 100%;
+  }
+  
+  /* Gender Inputs */
+  .gender-input {
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .gender-input span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .gender-input span input {
+    width: auto;
+    margin: 0;
+  }
+  
+  /* Checkbox Group */
+  .gender-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid white; */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .gender-checkbox input {
+    width: auto;
+    margin: 0;
+  }
+  
+  .gender-checkbox span {
+    gap: 10px;
+    padding-right: 20px;
+    font-size: 18px;
+  }
+  
+  /* Dropdown Box */
+  .batch-box select {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    font-size: 16px;
+    width: 75%;
+  }
+  
+  .batch-box option {
+    color: black;
+  }
+  
+  /* Fees Input */
+  .fees-box input {
+    color: white;
+  }
+  
+  /* Buttons */
+  .btn {
+    margin: 4vh 0 8vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn button {
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn button:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+  }
+  
+  /* Error Input Styling */
+  .input-error {
+    border: 2px solid red; /* Highlight error fields */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-1 {
+      margin: 0 5%;
+      padding: 15% 5%;
+    }
+  
+    .box label {
+      width: 30%;
+      font-size: 16px;
+    }
+  
+    .box input,
+    .batch-box select {
+      width: 70%;
+      font-size: 16px;
+    }
+  
+    .CD-header h2 {
+      font-size: 25px;
+    }
+  
+    .btn button {
+      font-size: 16px;
+      height: 45px;
+      width: 130px;
+    }
+
+    .gender-checkbox span {
+        gap: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .form-1 {
+      margin: 0 3%;
+      padding: 20% 5%;
+    }
+  
+    .box label {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .box input,
+    .batch-box select {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .gender-input {
+      flex-direction: column;
+    }
+    .gender-checkbox
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+        width: 100%;
+        /* padding: 0; */
+        gap: 0;
+        /* margin: 0; */
+        /* border: 1px solid red; */
+        /* text-align: left; */
+    }
+  
+    .gender-input span {
+        padding: 0;
+        gap: 0;
+        font-size: 14px;
+    }
+  
+    .btn button {
+      font-size: 14px;
+      height: 40px;
+      width: 120px;
+    }
+  }
+  

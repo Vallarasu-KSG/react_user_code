@@ -1,0 +1,237 @@
+/* General Styles */
+.about-container {
+    scrollbar-width: none;
+    padding-top: 25vh;
+    overflow: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-1-container {
+    color: white;
+    margin: 0 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap content for smaller screens */
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+span svg {
+    fill: white;
+    height: 80px;
+    width: 150px;
+}
+
+h2 {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.card {
+    padding: 10px 5px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: rgba(248, 248, 248, 0.25) 0px 30px 60px -12px inset,
+        rgba(255, 253, 253, 0.3) 0px 18px 36px -18px inset;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section 2 */
+.section-2-container {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.container-1,
+.container-2 {
+    color: white;
+    width: 600px;
+    height: 490px;
+    max-width: 100%; /* Responsive width */
+}
+
+.container-1 img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container-2 h1 {
+    text-align: left;
+    font-size: 35px;
+}
+
+.container-2 p {
+    padding-top: 15px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container-2 .list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.container-2 .list h4 {
+    cursor: pointer;
+    padding-top: 15px;
+    font-size: 20px;
+    line-height: 35px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.container-2 .list h4:hover {
+    transform: translateX(3px);
+}
+
+.container-2 button {
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 20px;
+    height: 9vh;
+    width: 200px;
+}
+
+.container-2 button:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(8, 8, 8, 0.25) 0px 30px 60px -12px inset,
+        rgba(8, 8, 8, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Responsive Styles */
+
+/* Tablets (768px and smaller) */
+@media (max-width: 768px) {
+    .about-container {
+        padding-top: 20vh;
+        height: auto; /* Adjust height */
+    }
+
+    .section-1-container {
+        gap: 15px; /* Reduce gap */
+    }
+
+    .card {
+        width: 90%; /* Scale down card width */
+        height: auto; /* Adjust height */
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container-1,
+    .container-2 {
+        width: 90%; /* Adjust width for tablets */
+        height: auto; /* Adjust height */
+    }
+
+    .container-2 h1 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .container-2 p {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .container-2 .list {
+        grid-template-columns: auto auto; /* Single column for list */
+    }
+
+    .container-2 button {
+        font-size: 18px; /* Smaller button */
+        height: auto;
+        padding: 10px; /* Add padding for smaller screens */
+    }
+}
+
+/* Mobile Devices (480px and smaller) */
+@media (max-width: 480px) {
+    .about-container {
+        padding-top: 15vh;
+    }
+
+    .section-1-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .card {
+        width: 100%; /* Full width */
+    }
+
+    span svg {
+        height: 50px; /* Smaller icons */
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container-1 img {
+        height: auto; /* Ensure images scale properly */
+    }
+
+    .container-2 h1 {
+        font-size: 24px; /* Smaller heading */
+        text-align: center;
+    }
+
+    .container-2 p {
+        font-size: 16px;
+        text-align: center; /* Center-align text */
+    }
+
+    .container-2 .list {
+        grid-template-columns: auto ; /* Single column for list */
+    }
+
+    .container-2 .list h4 {
+        font-size: 16px; /* Smaller text */
+    }
+
+    .container-2 button {
+        font-size: 16px;
+        width: 100%; /* Full-width button */
+    }
+}
